@@ -1,3 +1,6 @@
+# March 25, 2024
+Today we discussed and demo'ed Docker.
+
 # March 20, 2024
 Today we discussed the overly-complicated design of our system. We also discussed containers (i.e. Docker).
 
