@@ -1,5 +1,34 @@
 # March 25, 2024
-Today we discussed and demo'ed Docker.
+Today we discussed and demo'ed Docker. It was arguably the best discussion of Docker ever had.
+
+We also talked about what our system is going to look like. We broke it up into different parts so that we can 
+get started developing pieces on Wednesday.
+
+```mermaid
+sequenceDiagram
+    Student->>+UniversityFinder: what schools do you have?
+    UniversityFinder-->>-Student: list of universities
+
+    Student->>+DegreeFinder: I go to school X
+    DegreeFinder-->>-Student: available degrees
+
+    Student->>+DegreeRequirementFinder: What do I need for degree X?
+    DegreeRequirementFinder-->>-Student: courses required
+```
+
+Again, this is more APIs than we would need, but I'm doing it because (a) it makes it easy to split up and assign to
+students, and (b) it gives us a chance to learn new things.
+
+There are some more REST APIs we can create, but let's see how many people are interested in implementing
+them first. Interest in implementing in the following languages:
+* Python (x)
+* JavaScript (x)
+* Java
+* Haskell (x)
+* Racket (x)
+* C#/.NET
+* C++ (x)
+
 
 # March 20, 2024
 Today we discussed the overly-complicated design of our system. We also discussed containers (i.e. Docker).
