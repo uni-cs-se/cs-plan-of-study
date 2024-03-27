@@ -1,3 +1,6 @@
+# March 27, 2024
+Today we made some user stories for our plan of study maker.
+
 # March 25, 2024
 Today we discussed and demo'ed Docker. It was arguably the best discussion of Docker ever had.
 
