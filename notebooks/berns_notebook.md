@@ -1,5 +1,30 @@
 # March 27, 2024
-Today we made some user stories for our plan of study maker.
+Today we made some user stories for our plan of study maker. We also thought about different APIs we could have:
+* list of universities
+* list of programs for a given university
+* courses required for a given program at a given university
+* courses to take given a set of course preferences and completed courses
+* database for storing all the universities/programs/courses/requirements/etc.
+
+Groups chose the following languages, among others:
+* Python
+* Haskell
+* JavaScript
+* Java
+* COBOL
+* C++
+* MySQL for DB
+
+What are some factors that go into selecting a language for a project?
+* readability (based upon developer experience/preference)
+* product requirements (some languages can do things easier than others)
+* toolchains and support
+
+Let's take a look at Python and why we might choose it.
+* almost all of us know Python, if not just a little bit
+* it's easy to learn in case we do find someone who doesn't know it
+* mature IDE choices (VS Code, Pycharm, IDLE, vim, emacs)
+* easy frameworks for REST APIs
 
 # March 25, 2024
 Today we discussed and demo'ed Docker. It was arguably the best discussion of Docker ever had.
@@ -10,6 +35,8 @@ get started developing pieces on Wednesday.
 ```mermaid
 sequenceDiagram
     Student->>+UniversityFinder: what schools do you have?
+    UniversityFinder->>+Database: what schools do we have?
+    Database-->>-UniversityFinder: schools
     UniversityFinder-->>-Student: list of universities
 
     Student->>+DegreeFinder: I go to school X
