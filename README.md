@@ -1,4 +1,4 @@
-#Rest API generator thing
+# Rest API generator thing
 
 Andy said he wanted alot of restapi's so i figured the best way to go about
 satisfying this need would be to write a rest api generator. I wrote this in
@@ -6,16 +6,16 @@ continuation passing style because I really enjoy continuation passing style,
 it is currently setup to generate a few rest apis that together will calculate
 the a fibonnacci number in O(2^n) rest api calls!
 
-##Requirements
+## Requirements
 this has three dependencies that you can probably install with
-```
+```sh
 pip install httpx fastapi uvicorn
 ```
 if you can't the dependencies are httpx, fastapi, and uvicorn.
 
-##building
+## building
 you can generate the rest apis with
-```
+```sh
 make
 ```
 
@@ -25,9 +25,9 @@ generate Docker files but I never actually got around to getting them all to
 run in separate containers :/
 
 
-##Running
+## Running
 you can run them with
-```
+```sh
 ./run.sh
 ```
 
